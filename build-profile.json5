@@ -1,0 +1,49 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/scher/.ohos/config/openharmony/default_My_Calculator_mKXCMPDepQe-h5LFIRgdytdwTAioceLTkEWRgm9wkJI=.cer",
+          "storePassword": "0000001B93B53C2F7105C70101220E83A9C9A3A61A9423CCD4C850739256FFFFEE5CE30044E4B8CC9608FE",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B6CAC7986FD51CE4356A4177150A52FF4A7A3AD739AC1D0FA2258B8F9C5E117FD2FFB05B0B19351",
+          "profile": "C:/Users/scher/.ohos/config/openharmony/default_My_Calculator_mKXCMPDepQe-h5LFIRgdytdwTAioceLTkEWRgm9wkJI=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/scher/.ohos/config/openharmony/default_My_Calculator_mKXCMPDepQe-h5LFIRgdytdwTAioceLTkEWRgm9wkJI=.p12"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compileSdkVersion": 12,
+        "compatibleSdkVersion": 12,
+        "runtimeOS": "OpenHarmony"
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
